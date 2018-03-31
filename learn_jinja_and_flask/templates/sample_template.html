@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<!-- Add you CSS/JS here: you can put them in the static folder and call them like the image below -->
+	</head>
+	<body>
+		<img src="{{ url_for('static', 'Penguins.jpg') }}" alt="This is a sample image being served from the static folder">
+		<h3>Hello,
+		{% if name %} <!-- This is an if else statement; see the documentation for things like for loops and setting variables -->
+			{{ name }} <!-- This came from Python! -->
+		{% else %}
+			World
+		{% endif %}</h3>
+	</body>
+</html>
+<!-- Template inheritance is beyond the scope of this exercise, but do read about it in the documentation -->
